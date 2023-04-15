@@ -1,0 +1,277 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+
+    body
+
+        .footer
+            width: 100%
+            height: auto
+            background-color: #0B357A
+
+            .footer-content
+                width: 86.45833333333333%
+                height: auto
+                margin: auto
+                display: flex
+                justify-content: space-between
+                padding-top: $thirtytwoclamp
+                padding-bottom: $sixtyfourclamp
+
+                .footer-contacts-mob
+                    display: none
+
+                .logo-mobile
+                    display: none !important
+
+                .logo-content
+                    width: auto
+                    height: auto
+                    display: flex
+                    flex-direction: column
+
+                    .logo
+                        width: clamp(127px,13.229166666666666vw,508px)
+                        height: clamp(25.5px,2.65625vw,102px)
+
+                    .footer-p
+                        width: clamp(169px,17.604166666666668vw,676px)
+
+                        font-weight: 400
+                        font-size: clamp(13px,1.3541666666666667vw,52px)
+                        color: $main_cream
+                        margin-top: clamp(12.5px,1.3020833333333333vw,50px)
+
+                    .contact-us
+                        width: clamp(178.5px,18.59375vw,714px)
+                        font-family: 'Gothic A1', sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: clamp(10px,1.0416666666666667vw,40px)
+                        color: $main_cream
+                        margin-top: clamp(12.5px,1.3020833333333333vw,50px)
+
+                    .underline
+                        text-decoration: underline
+
+                .footer-navigation
+                    width: 100%
+                    margin-left: clamp(65px,6.770833333333333vw,260px)
+                    display: flex
+
+                    .footer-header
+                        font-weight: 400
+                        font-size: $thirtytwoclamp
+                        color: $background
+
+                    .footer-links
+                        width: 120%
+                        display: flex
+                        justify-content: space-between
+                        margin: auto
+                        margin-top: clamp(11.5px,1.1979166666666667vw,46px)
+
+                    .main-link
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        text-decoration: none
+                        font-size: clamp(9px,0.9375vw,36px)
+                        color: $main_cream
+                        text-decoration: underline
+                        cursor: pointer
+
+                    .link
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        text-decoration: none
+                        font-size: clamp(6.5px,0.6770833333333334vw,26px)
+                        cursor: pointer
+                        color: $background
+                        transition: 0.3s all
+
+                .footer-contacts
+                    width: auto
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    margin-left: clamp(71px,7.395833333333333vw,284px)
+
+                    .contacts-header
+                        font-family: 'FTY STRATEGYCIDE NCV'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: $thirtytwoclamp
+                        color: $background
+
+                    .contacts-container
+                        width: auto
+                        height: auto
+                        display: flex
+                        margin-top: $sixteenclamp
+
+                        .instagram-circle
+                            margin-right: $sixteenclamp
+
+                        .envelope-circle
+                            margin-left: $sixteenclamp
+
+                        .instagram-circle, .telegram-circle, .envelope-circle
+                            width: clamp(21px,2.1875vw,84px)
+                            height: clamp(21px,2.1875vw,84px)
+                            background: transparent
+                            border: 2px solid #FCEE03
+                            border-radius: 60px
+                            display: flex
+                            align-items: center
+                            justify-content: center
+
+                            .instagram, .telegram, .envelope
+                                color: white
+                                font-size: clamp(12px,1.25vw,48px)
+                                cursor: pointer
+                                transition: 0.3s all
+                                &:hover
+                                    color: #FCEE03
+
+                .upper-button
+                    width: clamp(153px,15.9375vw,612px)
+                    height: clamp(25px,2.6041666666666665vw,100px)
+                    font-family: 'FTY STRATEGYCIDE NCV'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: clamp(13px,1.3541666666666667vw,42px)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border-radius: 3px
+                    color: $red
+                    background-color: $main_cream
+                    margin-left: clamp(71px,7.395833333333333vw,284px)
+                    transition: 0.3s all
+                    &:hover
+                        background-color: $main_blue
+                        color: $background
+
+                    .sort-up-icon
+                        padding-top: clamp(5px,0.5208333333333334vw,20px)
+                        padding-left: clamp(5px,0.5208333333333334vw,20px)
+
+@media screen  and (max-width: 448px)
+
+    .footer
+        width: 100%
+        height: auto
+        background-color: $red
+
+        .footer-content
+            width: 86.45833333333333%
+            height: auto
+            margin: auto
+            display: flex
+            flex-direction: column !important
+            align-items: center !important
+            justify-content: center !important
+            padding-top: $sixtyfourclamp
+            padding-bottom: $sixtyfourclamp
+
+            .upper-button
+                width: clamp(161px,75.23364485981308vw,644px) !important
+                height: clamp(28px,13.551401869158878vw,116px) !important
+                margin: auto !important
+                font-size: clamp(13px,6.074766355140187vw,52px) !important
+                margin-top: clamp(32px,14.953271028037383vw,128px) !important
+
+            .footer-contacts
+                display: none !important
+
+            .footer-contacts-mob
+                display: flex !important
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                margin: auto
+
+                .contacts-header-mob
+                    font-family: 'FTY STRATEGYCIDE NCV'
+                    font-style: normal
+                    font-weight: 400
+                    font-size: clamp(17px,7.94392523364486vw,68px) !important
+                    color: $background
+
+                .contacts-container-mob
+                    width: auto
+                    height: auto
+                    display: flex
+                    margin-top: clamp(8px,3.7383177570093458vw,32px)
+
+                    .instagram-mob
+                        color: $background
+                        font-size: clamp(17px,7.94392523364486vw,68px) !important
+                        margin-right: clamp(16px,7.4766355140186915vw,64px) !important
+
+                    .telegram-mob
+                        color: $background
+                        font-size: clamp(17px,7.94392523364486vw,68px) !important
+
+                    .envelope-mob
+                        color: $background
+                        font-size: clamp(17px,7.94392523364486vw,68px) !important
+                        margin-left: clamp(16px,7.4766355140186915vw,64px) !important
+
+            .logo-mobile
+                display: flex !important
+
+            .logo-content
+                width: auto
+                height: auto
+                display: flex
+                margin: auto
+                flex-direction: column
+
+                .logo
+                    display: none !important
+
+                .footer-p
+                    width: clamp(169px,78.97196261682242vw,676px) !important
+                    font-size: clamp(13px,6.074766355140187vw,52px) !important
+                    text-align: center !important
+                    margin-top: 32px !important
+
+                .contact-us
+                    width: clamp(178.5px,83.41121495327103vw,714px) !important
+                    font-family: 'Gothic A1', sans-serif
+                    font-style: normal
+                    margin: auto !important
+                    text-align: center !important
+                    font-weight: 500
+                    font-size: clamp(10px,4.672897196261682vw,40px) !important
+                    color: $main_cream
+                    margin-top: clamp(12.5px,5.841121495327103vw,50px) !important
+
+                .underline
+                    text-decoration: underline
+
+            .footer-navigation
+                display: none !important

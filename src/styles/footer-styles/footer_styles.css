@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* body .footer {
+  width: 100%;
+  height: auto;
+  background-color: #0B357A;
+}
+* body .footer .footer-content {
+  width: 86.4583333333%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: clamp(16px, 1.6666666667vw, 64px);
+  padding-bottom: clamp(32px, 3.3333333333vw, 128px);
+}
+* body .footer .footer-content .footer-contacts-mob {
+  display: none;
+}
+* body .footer .footer-content .logo-mobile {
+  display: none !important;
+}
+* body .footer .footer-content .logo-content {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+* body .footer .footer-content .logo-content .logo {
+  width: clamp(127px, 13.2291666667vw, 508px);
+  height: clamp(25.5px, 2.65625vw, 102px);
+}
+* body .footer .footer-content .logo-content .footer-p {
+  width: clamp(169px, 17.6041666667vw, 676px);
+  font-weight: 400;
+  font-size: clamp(13px, 1.3541666667vw, 52px);
+  color: #F4F5F8;
+  margin-top: clamp(12.5px, 1.3020833333vw, 50px);
+}
+* body .footer .footer-content .logo-content .contact-us {
+  width: clamp(178.5px, 18.59375vw, 714px);
+  font-family: "Gothic A1", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(10px, 1.0416666667vw, 40px);
+  color: #F4F5F8;
+  margin-top: clamp(12.5px, 1.3020833333vw, 50px);
+}
+* body .footer .footer-content .logo-content .underline {
+  text-decoration: underline;
+}
+* body .footer .footer-content .footer-navigation {
+  width: 100%;
+  margin-left: clamp(65px, 6.7708333333vw, 260px);
+  display: flex;
+}
+* body .footer .footer-content .footer-navigation .footer-header {
+  font-weight: 400;
+  font-size: clamp(16px, 1.6666666667vw, 64px);
+  color: white;
+}
+* body .footer .footer-content .footer-navigation .footer-links {
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: clamp(11.5px, 1.1979166667vw, 46px);
+}
+* body .footer .footer-content .footer-navigation .main-link {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  color: #F4F5F8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+* body .footer .footer-content .footer-navigation .link {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: clamp(6.5px, 0.6770833333vw, 26px);
+  cursor: pointer;
+  color: white;
+  transition: 0.3s all;
+}
+* body .footer .footer-content .footer-contacts {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: clamp(71px, 7.3958333333vw, 284px);
+}
+* body .footer .footer-content .footer-contacts .contacts-header {
+  font-family: "FTY STRATEGYCIDE NCV";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(16px, 1.6666666667vw, 64px);
+  color: white;
+}
+* body .footer .footer-content .footer-contacts .contacts-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .footer .footer-content .footer-contacts .contacts-container .instagram-circle {
+  margin-right: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .footer .footer-content .footer-contacts .contacts-container .envelope-circle {
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .footer .footer-content .footer-contacts .contacts-container .instagram-circle, * body .footer .footer-content .footer-contacts .contacts-container .telegram-circle, * body .footer .footer-content .footer-contacts .contacts-container .envelope-circle {
+  width: clamp(21px, 2.1875vw, 84px);
+  height: clamp(21px, 2.1875vw, 84px);
+  background: transparent;
+  border: 2px solid #FCEE03;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* body .footer .footer-content .footer-contacts .contacts-container .instagram-circle .instagram, * body .footer .footer-content .footer-contacts .contacts-container .instagram-circle .telegram, * body .footer .footer-content .footer-contacts .contacts-container .instagram-circle .envelope, * body .footer .footer-content .footer-contacts .contacts-container .telegram-circle .instagram, * body .footer .footer-content .footer-contacts .contacts-container .telegram-circle .telegram, * body .footer .footer-content .footer-contacts .contacts-container .telegram-circle .envelope, * body .footer .footer-content .footer-contacts .contacts-container .envelope-circle .instagram, * body .footer .footer-content .footer-contacts .contacts-container .envelope-circle .telegram, * body .footer .footer-content .footer-contacts .contacts-container .envelope-circle .envelope {
+  color: white;
+  font-size: clamp(12px, 1.25vw, 48px);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+* body .footer .footer-content .footer-contacts .contacts-container .instagram-circle .instagram:hover, * body .footer .footer-content .footer-contacts .contacts-container .instagram-circle .telegram:hover, * body .footer .footer-content .footer-contacts .contacts-container .instagram-circle .envelope:hover, * body .footer .footer-content .footer-contacts .contacts-container .telegram-circle .instagram:hover, * body .footer .footer-content .footer-contacts .contacts-container .telegram-circle .telegram:hover, * body .footer .footer-content .footer-contacts .contacts-container .telegram-circle .envelope:hover, * body .footer .footer-content .footer-contacts .contacts-container .envelope-circle .instagram:hover, * body .footer .footer-content .footer-contacts .contacts-container .envelope-circle .telegram:hover, * body .footer .footer-content .footer-contacts .contacts-container .envelope-circle .envelope:hover {
+  color: #FCEE03;
+}
+* body .footer .footer-content .upper-button {
+  width: clamp(153px, 15.9375vw, 612px);
+  height: clamp(25px, 2.6041666667vw, 100px);
+  font-family: "FTY STRATEGYCIDE NCV";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(13px, 1.3541666667vw, 42px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  color: #588EF7;
+  background-color: #F4F5F8;
+  margin-left: clamp(71px, 7.3958333333vw, 284px);
+  transition: 0.3s all;
+}
+* body .footer .footer-content .upper-button:hover {
+  background-color: #00346E;
+  color: white;
+}
+* body .footer .footer-content .upper-button .sort-up-icon {
+  padding-top: clamp(5px, 0.5208333333vw, 20px);
+  padding-left: clamp(5px, 0.5208333333vw, 20px);
+}
+
+@media screen and (max-width: 448px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    background-color: #588EF7;
+  }
+  .footer .footer-content {
+    width: 86.4583333333%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-top: clamp(32px, 3.3333333333vw, 128px);
+    padding-bottom: clamp(32px, 3.3333333333vw, 128px);
+  }
+  .footer .footer-content .upper-button {
+    width: clamp(161px, 75.2336448598vw, 644px) !important;
+    height: clamp(28px, 13.5514018692vw, 116px) !important;
+    margin: auto !important;
+    font-size: clamp(13px, 6.0747663551vw, 52px) !important;
+    margin-top: clamp(32px, 14.953271028vw, 128px) !important;
+  }
+  .footer .footer-content .footer-contacts {
+    display: none !important;
+  }
+  .footer .footer-content .footer-contacts-mob {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .footer .footer-content .footer-contacts-mob .contacts-header-mob {
+    font-family: "FTY STRATEGYCIDE NCV";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    color: white;
+  }
+  .footer .footer-content .footer-contacts-mob .contacts-container-mob {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin-top: clamp(8px, 3.738317757vw, 32px);
+  }
+  .footer .footer-content .footer-contacts-mob .contacts-container-mob .instagram-mob {
+    color: white;
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    margin-right: clamp(16px, 7.476635514vw, 64px) !important;
+  }
+  .footer .footer-content .footer-contacts-mob .contacts-container-mob .telegram-mob {
+    color: white;
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+  }
+  .footer .footer-content .footer-contacts-mob .contacts-container-mob .envelope-mob {
+    color: white;
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    margin-left: clamp(16px, 7.476635514vw, 64px) !important;
+  }
+  .footer .footer-content .logo-mobile {
+    display: flex !important;
+  }
+  .footer .footer-content .logo-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  .footer .footer-content .logo-content .logo {
+    display: none !important;
+  }
+  .footer .footer-content .logo-content .footer-p {
+    width: clamp(169px, 78.9719626168vw, 676px) !important;
+    font-size: clamp(13px, 6.0747663551vw, 52px) !important;
+    text-align: center !important;
+    margin-top: 32px !important;
+  }
+  .footer .footer-content .logo-content .contact-us {
+    width: clamp(178.5px, 83.4112149533vw, 714px) !important;
+    font-family: "Gothic A1", sans-serif;
+    font-style: normal;
+    margin: auto !important;
+    text-align: center !important;
+    font-weight: 500;
+    font-size: clamp(10px, 4.6728971963vw, 40px) !important;
+    color: #F4F5F8;
+    margin-top: clamp(12.5px, 5.8411214953vw, 50px) !important;
+  }
+  .footer .footer-content .logo-content .underline {
+    text-decoration: underline;
+  }
+  .footer .footer-content .footer-navigation {
+    display: none !important;
+  }
+}/*# sourceMappingURL=footer_styles.css.map */

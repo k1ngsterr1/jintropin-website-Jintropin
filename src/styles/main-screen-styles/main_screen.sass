@@ -1,0 +1,187 @@
+$red: #588EF7
+$yellow: #FCEE03
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #EADF02
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    html,body
+        width: 100%
+        height: 100%
+        font-family: 'Unbounded', sans-serif
+        font-display: fallback
+        overflow-x: hidden !important
+
+        button, a
+            cursor: pointer
+            transition: 0.3s all
+            border: none
+
+        .main-screen
+            width: 100%
+            height: auto
+            background: #022B6B
+            display: flex
+            margin: auto
+            flex-direction: column
+
+            .arrow-blue
+                position: absolute
+                width: clamp(147.5px,15.364583333333334vw,590px)
+                height: clamp(150px,15.625vw,600px)
+                left: clamp(418.115px,43.553645833333334vw,1672.46px)
+                top: clamp(243.5px,25.364583333333332vw,974px)
+
+            .container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+
+                .proto-photo
+                    width: clamp(533.5px,55.572916666666664vw,2134px)
+                    height: clamp(385px,40.104166666666664vw,1540px)
+                    position: sticky
+                    left: clamp(550px,57.291666666666664vw,2200px)
+                    margin-top: -90px
+
+                .proto-photo-phone
+                    display: none
+
+                .main-heading
+                    width: clamp(500px,52.083333333333336vw,2000px)
+                    height: clamp(80px,8.333333333333334vw,320px)
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: clamp(32.5px,3.3854166666666665vw,130px)
+                    color: white
+
+                    .hormone
+                        color: $yellow
+
+                .description
+                    width: clamp(323px,33.645833333333336vw,1292px)
+                    height: auto
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 300
+                    line-height: 152%
+                    font-size: clamp(9.5px,0.9895833333333334vw,38px)
+                    margin-top: clamp(22px,2.2916666666666665vw,88px)
+                    color: white
+
+                .buttons
+                    width: auto
+                    height: auto
+                    display: flex
+
+                    .main-button
+                        width: clamp(203.5px,21.197916666666668vw,814px)
+                        height: $sixtyfourclamp
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(11px,1.1458333333333333vw,44px)
+                        text-decoration: none !important
+                        background-color: #FCEE03
+                        display: flex
+                        align-items: center
+                        border-radius: 52px
+                        justify-content: center
+                        border: none
+                        color: #022B6B
+                        margin-top: clamp(22px,2.2916666666666665vw,88px)
+                        &:hover
+                            background-color: $button_hover
+
+                        .telegram-icon
+                            margin-right: clamp(6px,0.625vw,24px)
+
+@media screen  and (max-width: 448px)
+
+    .main-screen
+        width: 100%
+        height: 100vh
+        display: flex
+        margin: auto
+        flex-direction: column
+
+        .arrow-blue
+            display: none !important
+
+        .separator
+            display: none
+
+        .container
+            width: 86.45833333333333%
+            height: auto
+            display: flex
+            flex-direction: column
+
+            .proto-photo
+                display: none
+
+            .proto-photo-phone
+                width: auto
+                height: auto
+                margin-top: clamp(-100px,-46.728971962616825vw,-400px)
+                display: flex !important
+
+            .main-content
+
+                .main-heading
+                    width: clamp(188.5px,88.08411214953271vw,754px) !important
+                    height: clamp(118px,55.14018691588785vw,472px) !important
+                    margin: auto
+                    font-size: clamp(21.5px,10.046728971962617vw,86px) !important
+                    text-align: center !important
+
+                .description
+                    width: clamp(176px,82.24299065420561vw,704px) !important
+                    height: auto !important
+                    text-align: center
+                    margin: auto
+                    font-weight: 300
+                    font-size: clamp(9px,4.205607476635514vw,36px)
+                    margin-top: clamp(8px,3.7383177570093458vw,32px)
+
+                .buttons
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    margin-top: clamp(145px,74.35897435897436vw,580px) !important
+
+                    .main-button, .more-button
+                        width: clamp(178.5px,83.41121495327103vw,714px) !important
+                        height: clamp(31.5px,14.719626168224298vw,126px) !important
+                        font-size: clamp(10.5px,4.906542056074766vw,42px)
+                        margin: auto
+                        margin-top: clamp(-250px,116.82242990654206vw,-1000px) !important
+
+                    .main-button
+                        height: clamp(34px,15.88785046728972vw,136px) !important
