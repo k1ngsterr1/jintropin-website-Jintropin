@@ -14,7 +14,7 @@ const DocumentsScreen = () => {
           <div className="documents">
             <img className="document-photo" src={document}></img>
             <img className="document-photo" src={document}></img>
-            <img className="document-photo" src={document}></img>
+            // <img className="document-photo" src={document}></img>
           </div>
         </div>
       </div>
