@@ -211,6 +211,17 @@
     margin-top: clamp(50px, 5.2083333333vw, 200px);
     margin-bottom: clamp(50px, 5.2083333333vw, 200px);
   }
+  .in-stock-screen .in-stock-container .instock-p-container {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .in-stock-screen .in-stock-container .instock-p-container .main-button {
+    width: clamp(178.5px, 83.4112149533vw, 714px) !important;
+    font-size: clamp(10.5px, 4.9065420561vw, 42px) !important;
+    height: clamp(34px, 15.8878504673vw, 136px) !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
   .in-stock-screen .in-stock-container .in-stock-heading-container {
     width: 100%;
     margin-top: clamp(32px, 3.3333333333vw, 128px);
